@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(assets/hero-background.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-left: auto;
+    font-size: 1.7em;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.icon {
+    font-size: 2rem;
+    display: none;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.container .card{
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+
+.container3 .card3 {
+    text-align: center;
+}
+
+.container3 .card3 .title {
+    font-size: 2.5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 16rem;
+    text-align: center;
+}
+
+.deskripsi3 {
+    font-size: 1.4rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font: bold;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judul h1 {
+    text-align: center;
+    margin-top: 20rem;
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.title-footer {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    color: black;
+}
+
+#Home {
+    /* margin-top: -9rem; */
+    text-align: center;
+}
+
+#Certificate {
+    margin-top: 10rem;
+}
+
+.contact {
+    margin-top: -10rem;
+}
+
+
+@media (max-width: 1130px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Menambahkan ini untuk men-center-kan item di dalam container */
+    }
+    
+    .card {
+        text-align: center;
+        width: 100%; /* Atur lebar agar elemen child bisa menyesuaikan */
+    }
+    
+    .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%; /* Atur lebar agar elemen child bisa menyesuaikan */
+        text-align: center; /* Pastikan gambar berada di tengah */
+        margin-left: 15rem;
+    }
+    
+    .card2 .profile img {
+        width: 100%; /* Atur lebar gambar agar sesuai dengan parent container */
+        max-width: 300px; /* Batas maksimum lebar gambar */
+        margin: 0 auto; /* Menambahkan margin auto untuk men-center-kan gambar */
+    }
+}
+
+
+@media (max-width: 809px){
+   .title {
+      font-size: 2rem;
+   }
+
+   .deskripsi3{
+    font-size: 1rem;
+    width: 65%;
+   }
+}
+
+
+@media (max-width: 676px){
+    .title {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-top: -8rem;
+    }
+    
+    .menu {
+        flex-direction: column;
+        margin-top: 10rem;
+    text-align: center;
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-right: 3rem;
+    background-color: white;
+   }
+
+   nav a {
+    width: 100%;
+   }
+
+   .menu.active {
+    display: flex;
+   }
+
+
+   .icon {
+    display: block;
+    font-weight: bold;
+    margin-left: auto;
+   }
+
+   nav {
+    justify-content: flex-end; /* Tetap posisikan menu dan ikon ke ujung kanan */
+  }
+}
+
+@media (max-width: 445px){
+    .title {
+        font-size: 1px;
+    }
+
+    .deskripsi3{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 330px){
+    .title{
+        font-size: 15px;
+    }
+
+    .deskripsi3 {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .card2 .profile img {
+        width: 100%; /* Atur lebar gambar agar sesuai dengan parent container */
+        max-width: 222px; /* Batas maksimum lebar gambar */
+        margin: 0 auto; /* Menambahkan margin auto untuk men-center-kan gambar */
+    }
+
+    nav {
+        justify-content: flex-end; /* Tetap posisikan menu dan ikon ke ujung kanan */
+      }
+    
+}
